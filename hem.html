@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bluffmaster UF</title>
+  <link rel="stylesheet" href="hem.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="#home" class="logo">
+      <img src="/SVG/bitmap.svg" alt="LOGO" class="svg-logo">
+    </a>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <ul class="nav-links">
+      <li><a href="#home">Hem</a></li>
+      <li><a href="#about">Om</a></li>
+      <li><a href="#preorder">Produkter</a></li>
+      <li><a href="#gallery">Galleri</a></li>
+      <li><a href="#info">Kontakter</a></li>
+    </ul>
+  </nav>
+
+
+
+  <!-- Hero Section -->
+  <header id="home" class="hero">
+    <div class="container">
+      <h1 class="gradient-text">Bluffmaster UF</h1>
+      <p class="gradient-text-small">Kortleken som gör dina spelkvällar oförglömliga.</p>
+      <a href="#preorder" class="btn">Köp Nu</a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+<section id="about" class="about reveal">
+  <div class="container">
+    <h2 class="gradient-text">Vad är Bluffmaster?</h2>
+    <p class="intro-text">Bluffmaster är en unik kortlek fylld med bluffar, skratt och utmaningar – perfekt för spelkvällar med vänner och familj!</p>
+ 
+    <div class="game-info">
+      <p>
+        Bluffmaster är ett kortspel designat för att skapa maximalt skratt och spänning för hela familjen. Med humoristiska
+        påståenden, utmanande straff och möjligheten att bluffa dig igenom varje runda, erbjuder spelet en unik upplevelse
+        varje gång.
+      </p>
+      <ul class="game-details-list">
+        <li><strong>Antal Kort:</strong> 54 högkvalitativa kort</li>
+        <li><strong>Spelarnas Ålder:</strong> Från 12 år och uppåt</li>
+        <li><strong>Speltid:</strong> 30-60 minuter per omgång</li>
+        <li><strong>Miljövänlig Produktion:</strong> Tryckt med hållbara material</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container faq-section">
+    <h2>Vanliga Frågor</h2>
+    <div class="faq">
+      <div class="faq-item">
+        <p class="question"><strong>Fråga:</strong> Hur många spelare kan spela Bluffmaster?</p>
+        <p class="answer"><strong>Svar:</strong> Blufffmaster kan spelas av 3-8 spelare, vilket gör det perfekt för spelkvällar med både små och stora grupper.</p>
+      </div>
+      <div class="faq-item">
+        <p class="question"><strong>Fråga:</strong> Kan spelet spelas med barn?</p>
+        <p class="answer"><strong>Svar:</strong> Ja! Bluffmaster är utformat för att passa spelare från 12 år och uppåt. Vissa utmaningar är mer anpassade för äldre, men de kan enkelt anpassas för yngre spelare.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- preorder -->
+    <section id="preorder">
+      <div class="container">
+        <h2>Förbeställ Bluffmaster UF</h2>
+        <p>Fyll i dina uppgifter för att förbeställa spelet.</p>
+        <form name="submit-to-google-sheet">
+          <label for="name">Namn:</label>
+          <input id="name" name="name" type="text" placeholder="Ditt namn" required>
+    
+          <label for="phone">Telefonnummer:</label>
+          <input id="phone" name="phone" type="text" placeholder="Ditt telefonnummer" required>
+    
+          <label for="email">E-postadress:</label>
+          <input id="email" name="email" type="email" placeholder="Din e-postadress" required>
+    
+          <label for="comment">Kommentar:</label>
+          <textarea id="comment" name="comment" placeholder="Eventuell kommentar..."></textarea>
+    
+          <button type="submit">Förbeställ</button>
+        </form>
+    
+        <div id="message"></div>
+      </div>
+    </section>
+    
+
+    <!-- GGalleri Section -->
+    <section id="gallery" class="gallery-section">
+      <div class="container">
+        <h2>Utforska Bluffmaster UF</h2>
+        <p>Få en inblick i hur spelet ser ut och vad som gör det så speciellt!</p>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="/images/BluffMaster.png" alt="Bluffspelet Kort">
+            <p>Högkvalitativa kort designade för skratt och bluff.</p>
+          </div>
+          <div class="gallery-item">
+            <img src="images/på väg.jpg" alt="Bluffspelet i spel">
+            <p></p>
+          </div>
+          <div class="gallery-item">
+            <img src="images/på väg.jpg" alt="Bluffspelet Förpackning">
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+
+    
+    <!-- Kontakter och Mer om Spelet Sektion -->
+<section id="info" class="info-section">
+  <div class="container">
+    <h2>Kontakta Oss</h2>
+    <div class="contact-info">
+      <p>Har du några frågor eller funderingar om Bluffmaster UF? Vi hjälper dig gärna!</p>
+      <ul>
+        <li><strong>E-post:</strong> bluffmasteruf@gmail.com</li>
+        <li><strong>Telefon:</strong> +46 70-714 68 30</li>
+        <li><strong>Adress:</strong> Bluffmaster UF,  Gamla Norrvägen 6, 352 43 Växjö, Sverige</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+    
+    
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2024 Bluffspelet. Alla rättigheter förbehållna.</p>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/bluffmaster_uf/" target="_blank">Instagram</a>
+        <a href="https://www.instagram.com/bluffmaster_uf/" target="_blank">TikTok</a>
+        <a href="https://www.instagram.com/bluffmaster_uf/" target="_blank">Facebook</a>
+      </div>
+    </div>
+    <!-- Scroll-to-Top Button -->
+    <button class="scroll-to-top">↑</button>
+  </footer>
+
+</body>
+<script src="app.js"></script>
+
+</html>
